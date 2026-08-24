@@ -1,0 +1,13 @@
+{
+  "itemGroup.modganteng": "Example Mod Tab",
+  "block.modganteng.example_block": "Example Block",
+  "item.modganteng.example_item": "Example Item",
+
+  "modganteng.configuration.title": "Mod Ganteng Configs",
+  "modganteng.configuration.section.modganteng.common.toml": "Mod Ganteng Configs",
+  "modganteng.configuration.section.modganteng.common.toml.title": "Mod Ganteng Configs",
+  "modganteng.configuration.items": "Item List",
+  "modganteng.configuration.logDirtBlock": "Log Dirt Block",
+  "modganteng.configuration.magicNumberIntroduction": "Magic Number Text",
+  "modganteng.configuration.magicNumber": "Magic Number"
+}
