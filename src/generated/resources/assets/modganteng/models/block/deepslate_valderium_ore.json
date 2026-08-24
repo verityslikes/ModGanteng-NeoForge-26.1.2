@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "modganteng:block/deepslate_valderium_ore"
+  }
+}
