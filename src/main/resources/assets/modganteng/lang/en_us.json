@@ -1,13 +1,10 @@
 {
-  "itemGroup.modganteng": "Example Mod Tab",
-  "block.modganteng.example_block": "Example Block",
-  "item.modganteng.example_item": "Example Item",
+  "item.modganteng.raw_valderium": "Raw Valderium",
+  "item.modganteng.valderium_ingot": "Valderium Ingot",
 
-  "modganteng.configuration.title": "Mod Ganteng Configs",
-  "modganteng.configuration.section.modganteng.common.toml": "Mod Ganteng Configs",
-  "modganteng.configuration.section.modganteng.common.toml.title": "Mod Ganteng Configs",
-  "modganteng.configuration.items": "Item List",
-  "modganteng.configuration.logDirtBlock": "Log Dirt Block",
-  "modganteng.configuration.magicNumberIntroduction": "Magic Number Text",
-  "modganteng.configuration.magicNumber": "Magic Number"
+  "block.modganteng.valderium_block": "Valderium Block",
+  "block.modganteng.valderium_ore": "Valderium Ore",
+  "block.modganteng.deepslate_valderium_ore": "Deepslate Valderium Ore",
+
+  "creativetab.modganteng.mod_ganteng_tab": "Mod Ganteng"
 }
