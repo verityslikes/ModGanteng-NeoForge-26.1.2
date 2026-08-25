@@ -23,7 +23,7 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.VALDERIUM_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.VALDERIUM_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.VALDERIUM_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
-        itemModels.generateFlatItem(ModItems.VALDERIUM_SHOVEl.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.VALDERIUM_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.VALDERIUM_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 
         itemModels.generateSpear(ModItems.VALDERIUM_SPEAR.get());

@@ -27,7 +27,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                 .add(ModItems.VALDERIUM_PICKAXE.get());
 
         tag(ItemTags.SHOVELS)
-                .add(ModItems.VALDERIUM_SHOVEl.get());
+                .add(ModItems.VALDERIUM_SHOVEL.get());
 
         tag(ItemTags.HOES)
                 .add(ModItems.VALDERIUM_HOE.get());

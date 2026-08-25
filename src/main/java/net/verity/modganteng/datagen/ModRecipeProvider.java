@@ -2,10 +2,7 @@ package net.verity.modganteng.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -78,7 +75,6 @@ public class ModRecipeProvider extends RecipeProvider {
 
         oreSmelting(VALDERIUM_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.VALDERIUM_INGOT.get(), 0.5F, 300, "valderium");
         oreBlasting(VALDERIUM_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.VALDERIUM_INGOT.get(), 0.5F, 150, "valderium");
-
     }
 
     @Override
