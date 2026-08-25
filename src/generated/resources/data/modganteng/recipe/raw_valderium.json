@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "valderium",
+  "ingredients": [
+    "modganteng:raw_valderium_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "modganteng:raw_valderium"
+  }
+}

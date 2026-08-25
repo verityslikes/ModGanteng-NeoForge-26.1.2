@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "valderium",
+  "key": {
+    "A": "modganteng:raw_valderium"
+  },
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "id": "modganteng:raw_valderium_block"
+  }
+}
