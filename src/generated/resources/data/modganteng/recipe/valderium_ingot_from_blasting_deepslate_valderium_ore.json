@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 0.5,
+  "group": "valderium",
+  "ingredient": "modganteng:deepslate_valderium_ore",
+  "result": {
+    "id": "modganteng:valderium_ingot"
+  }
+}

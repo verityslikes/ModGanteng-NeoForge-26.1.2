@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "valderium",
+  "ingredients": [
+    "modganteng:valderium_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "modganteng:valderium_ingot"
+  }
+}
