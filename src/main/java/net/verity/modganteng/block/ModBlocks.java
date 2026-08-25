@@ -21,6 +21,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> VALDERIUM_BLOCK = registerBlock("valderium_block",
             properties -> new Block(properties.strength(40.0F, 1200.0F)
                     .requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+    public static final DeferredBlock<Block> RAW_VALDERIUM_BLOCK = registerBlock("raw_valderium_block",
+            properties -> new Block(properties.strength(40.0F, 1200.0F)
+                    .requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS)));
 
     public static final DeferredBlock<Block> VALDERIUM_ORE = registerBlock("valderium_ore",
             properties -> new DropExperienceBlock(UniformInt.of(4, 6),

@@ -31,6 +31,7 @@ public class ModModelProvider extends ModelProvider {
 
         /* BLOCKS */
         blockModels.createTrivialCube(ModBlocks.VALDERIUM_BLOCK.get());
+        blockModels.createTrivialCube(ModBlocks.RAW_VALDERIUM_BLOCK.get());
         blockModels.createTrivialCube(ModBlocks.VALDERIUM_ORE.get());
         blockModels.createTrivialCube(ModBlocks.DEEPSLATE_VALDERIUM_ORE.get());
 

@@ -30,6 +30,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.VALDERIUM_BLOCK.get());
+        dropSelf(ModBlocks.RAW_VALDERIUM_BLOCK.get());
 
         add(ModBlocks.VALDERIUM_ORE.get(), createOreDrop(ModBlocks.VALDERIUM_ORE.get(), ModItems.RAW_VALDERIUM.get()));
         add(ModBlocks.DEEPSLATE_VALDERIUM_ORE.get(), createOreDrop(ModBlocks.DEEPSLATE_VALDERIUM_ORE.get(), ModItems.RAW_VALDERIUM.get()));

@@ -21,17 +21,22 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.VALDERIUM_BLOCK.get())
+                .add(ModBlocks.RAW_VALDERIUM_BLOCK.get())
                 .add(ModBlocks.VALDERIUM_ORE.get())
                 .add(ModBlocks.DEEPSLATE_VALDERIUM_ORE.get());
 
         tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.VALDERIUM_ORE.get())
                 .add(ModBlocks.VALDERIUM_BLOCK.get())
+                .add(ModBlocks.RAW_VALDERIUM_BLOCK.get())
                 .add(ModBlocks.DEEPSLATE_VALDERIUM_ORE.get());
+
 
         tag(ModTags.Blocks.NEEDS_VALDERIUM_TOOL);
 
+
         tag(ModTags.Blocks.INCORRECT_FOR_VALDERIUM_TOOL);
+
 
         List.of(
                 BlockTags.INCORRECT_FOR_WOODEN_TOOL,

@@ -49,9 +49,25 @@ public class ModRecipeProvider extends RecipeProvider {
                 .group("valderium")
                 .save(output);
 
+        shaped(RecipeCategory.MISC, ModBlocks.RAW_VALDERIUM_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.RAW_VALDERIUM.get())
+                .unlockedBy(getHasName(ModItems.RAW_VALDERIUM.get()), has(ModItems.RAW_VALDERIUM))
+                .group("valderium")
+                .save(output);
+
+
         shapeless(RecipeCategory.MISC, ModItems.VALDERIUM_INGOT.get(), 9)
                 .requires(ModBlocks.VALDERIUM_BLOCK)
                 .unlockedBy(getHasName(ModBlocks.VALDERIUM_BLOCK.get()), has(ModBlocks.VALDERIUM_BLOCK))
+                .group("valderium")
+                .save(output);
+
+        shapeless(RecipeCategory.MISC, ModItems.RAW_VALDERIUM.get(), 9)
+                .requires(ModBlocks.RAW_VALDERIUM_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.RAW_VALDERIUM_BLOCK.get()), has(ModBlocks.RAW_VALDERIUM_BLOCK))
                 .group("valderium")
                 .save(output);
 
