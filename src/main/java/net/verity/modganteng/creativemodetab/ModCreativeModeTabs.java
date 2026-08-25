@@ -23,6 +23,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_VALDERIUM);
                         output.accept(ModItems.VALDERIUM_INGOT);
 
+                        output.accept(ModItems.VALDERIUM_SWORD);
+                        output.accept(ModItems.VALDERIUM_PICKAXE);
+                        output.accept(ModItems.VALDERIUM_AXE);
+                        output.accept(ModItems.VALDERIUM_SHOVEl);
+                        output.accept(ModItems.VALDERIUM_HOE);
+                        output.accept(ModItems.VALDERIUM_SPEAR);
+
                         output.accept(ModItems.VALDERIUM_APPLE);
 
                         output.accept(ModBlocks.VALDERIUM_BLOCK);

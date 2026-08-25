@@ -20,6 +20,14 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.VALDERIUM_INGOT.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.VALDERIUM_APPLE.get(), ModelTemplates.FLAT_ITEM);
 
+        itemModels.generateFlatItem(ModItems.VALDERIUM_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.VALDERIUM_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.VALDERIUM_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.VALDERIUM_SHOVEl.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(ModItems.VALDERIUM_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+
+        itemModels.generateSpear(ModItems.VALDERIUM_SPEAR.get());
+
 
         /* BLOCKS */
         blockModels.createTrivialCube(ModBlocks.VALDERIUM_BLOCK.get());
