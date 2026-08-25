@@ -23,6 +23,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_VALDERIUM);
                         output.accept(ModItems.VALDERIUM_INGOT);
 
+                        output.accept(ModItems.VALDERIUM_APPLE);
+
                         output.accept(ModBlocks.VALDERIUM_BLOCK);
                         output.accept(ModBlocks.VALDERIUM_ORE);
                         output.accept(ModBlocks.DEEPSLATE_VALDERIUM_ORE);
