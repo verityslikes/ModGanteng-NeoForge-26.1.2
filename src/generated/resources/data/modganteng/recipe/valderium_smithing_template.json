@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "modganteng:valderium_ingot",
+    "C": "minecraft:deepslate",
+    "S": "modganteng:valderium_smithing_template"
+  },
+  "pattern": [
+    "ASA",
+    "ACA",
+    "AAA"
+  ],
+  "result": {
+    "count": 2,
+    "id": "modganteng:valderium_smithing_template"
+  }
+}

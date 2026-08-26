@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "modganteng:valderium_ingot",
+  "base": "minecraft:netherite_hoe",
+  "result": {
+    "id": "modganteng:valderium_hoe"
+  },
+  "template": "modganteng:valderium_smithing_template"
+}
