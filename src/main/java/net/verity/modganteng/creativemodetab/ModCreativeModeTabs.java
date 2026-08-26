@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RAW_VALDERIUM);
                         output.accept(ModItems.VALDERIUM_INGOT);
+                        output.accept(ModItems.VALDERIUM_SMITHING_TEMPLATE);
 
                         output.accept(ModItems.VALDERIUM_SWORD);
                         output.accept(ModItems.VALDERIUM_PICKAXE);

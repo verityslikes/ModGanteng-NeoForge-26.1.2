@@ -3,6 +3,8 @@ package net.verity.modganteng.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -43,7 +45,6 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("AAA")
                 .define('A', ModItems.VALDERIUM_INGOT.get())
                 .unlockedBy(getHasName(ModItems.VALDERIUM_INGOT.get()), has(ModItems.VALDERIUM_INGOT))
-                .group("valderium")
                 .save(output);
 
         shaped(RecipeCategory.MISC, ModBlocks.RAW_VALDERIUM_BLOCK.get())
@@ -52,29 +53,56 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("AAA")
                 .define('A', ModItems.RAW_VALDERIUM.get())
                 .unlockedBy(getHasName(ModItems.RAW_VALDERIUM.get()), has(ModItems.RAW_VALDERIUM))
-                .group("valderium")
                 .save(output);
 
 
         shapeless(RecipeCategory.MISC, ModItems.VALDERIUM_INGOT.get(), 9)
                 .requires(ModBlocks.VALDERIUM_BLOCK)
                 .unlockedBy(getHasName(ModBlocks.VALDERIUM_BLOCK.get()), has(ModBlocks.VALDERIUM_BLOCK))
-                .group("valderium")
                 .save(output);
 
         shapeless(RecipeCategory.MISC, ModItems.RAW_VALDERIUM.get(), 9)
                 .requires(ModBlocks.RAW_VALDERIUM_BLOCK)
                 .unlockedBy(getHasName(ModBlocks.RAW_VALDERIUM_BLOCK.get()), has(ModBlocks.RAW_VALDERIUM_BLOCK))
-                .group("valderium")
                 .save(output);
 
+        copyTemplate(ModItems.VALDERIUM_SMITHING_TEMPLATE.get(), ModItems.VALDERIUM_INGOT.get(), Items.DEEPSLATE);
 
-
+        smithing(ModItems.VALDERIUM_SMITHING_TEMPLATE.get(), Items.NETHERITE_PICKAXE, ModItems.VALDERIUM_INGOT.get(), ModItems.VALDERIUM_PICKAXE.get());
+        smithing(ModItems.VALDERIUM_SMITHING_TEMPLATE.get(), Items.NETHERITE_SWORD, ModItems.VALDERIUM_INGOT.get(), ModItems.VALDERIUM_SWORD.get());
+        smithing(ModItems.VALDERIUM_SMITHING_TEMPLATE.get(), Items.NETHERITE_AXE, ModItems.VALDERIUM_INGOT.get(), ModItems.VALDERIUM_AXE.get());
+        smithing(ModItems.VALDERIUM_SMITHING_TEMPLATE.get(), Items.NETHERITE_HOE, ModItems.VALDERIUM_INGOT.get(), ModItems.VALDERIUM_HOE.get());
+        smithing(ModItems.VALDERIUM_SMITHING_TEMPLATE.get(), Items.NETHERITE_SHOVEL, ModItems.VALDERIUM_INGOT.get(), ModItems.VALDERIUM_SHOVEL.get());
+        smithing(ModItems.VALDERIUM_SMITHING_TEMPLATE.get(), Items.NETHERITE_SPEAR, ModItems.VALDERIUM_INGOT.get(), ModItems.VALDERIUM_SPEAR.get());
 
         List<ItemLike> VALDERIUM_SMELTABLES = List.of(ModItems.RAW_VALDERIUM, ModBlocks.VALDERIUM_ORE, ModBlocks.DEEPSLATE_VALDERIUM_ORE);
 
         oreSmelting(VALDERIUM_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.VALDERIUM_INGOT.get(), 0.5F, 300, "valderium");
         oreBlasting(VALDERIUM_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.VALDERIUM_INGOT.get(), 0.5F, 150, "valderium");
+    }
+
+    protected void copyTemplate(Item template, Item material, ItemLike baseBlock) {
+        shaped(RecipeCategory.MISC, template, 2)
+                .pattern("ASA")
+                .pattern("ACA")
+                .pattern("AAA")
+                .define('A', material)
+                .define('C', baseBlock)
+                .define('S', template)
+                .unlockedBy("has_" + getHasName(template), has(template))
+                .save(output);
+    }
+
+    protected void smithing(Item template, Item base, Item addition, Item result) {
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(template),
+                        Ingredient.of(base),
+                        Ingredient.of(addition),
+                        RecipeCategory.MISC,
+                        result
+                )
+                .unlocks("has_" + getItemName(addition), this.has(addition))
+                .save(this.output, ModGanteng.MOD_ID + ":" + getItemName(result) + "_smithing");
     }
 
     @Override

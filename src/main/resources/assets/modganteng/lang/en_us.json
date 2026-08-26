@@ -11,6 +11,12 @@
 
   "item.modganteng.valderium_apple": "Valderium Apple",
 
+  "item.modganteng.valderium_smithing_template": "Valderium Upgrade",
+  "item.modganteng.smithing_template.valderium_upgrade.additions_slot_description": "Add Valderium Ingot",
+  "item.modganteng.smithing_template.valderium_upgrade.applies_to": "Netherite Equipment",
+  "item.modganteng.smithing_template.valderium_upgrade.base_slot_description": "Add netherite armor, weapon, or tool",
+  "item.modganteng.smithing_template.valderium_upgrade.ingredients": "Valderium Ingot",
+
   "block.modganteng.valderium_block": "Valderium Block",
   "block.modganteng.raw_valderium_block": "Raw Valderium Block",
   "block.modganteng.valderium_ore": "Valderium Ore",
