@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "modganteng:valderium_ingot",
+  "base": "minecraft:mace",
+  "result": {
+    "id": "modganteng:valderium_mace"
+  },
+  "template": "modganteng:valderium_smithing_template"
+}
