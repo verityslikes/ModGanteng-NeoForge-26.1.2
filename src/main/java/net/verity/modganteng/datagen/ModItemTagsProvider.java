@@ -37,5 +37,8 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
         tag(ItemTags.SPEARS)
                 .add(ModItems.VALDERIUM_SPEAR.get());
+
+        tag(ItemTags.MACE_ENCHANTABLE)
+                .add(ModItems.VALDERIUM_MACE.get());
     }
 }

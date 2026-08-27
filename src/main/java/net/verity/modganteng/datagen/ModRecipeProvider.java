@@ -55,6 +55,15 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(ModItems.RAW_VALDERIUM.get()), has(ModItems.RAW_VALDERIUM))
                 .save(output);
 
+        shaped(RecipeCategory.FOOD, ModItems.VALDERIUM_APPLE.get())
+                .pattern("AAA")
+                .pattern("ACA")
+                .pattern("AAA")
+                .define('A', ModItems.VALDERIUM_INGOT.get())
+                .define('C', Items.APPLE)
+                .unlockedBy(getHasName(ModItems.RAW_VALDERIUM.get()), has(ModItems.RAW_VALDERIUM))
+                .save(output);
+
 
         shapeless(RecipeCategory.MISC, ModItems.VALDERIUM_INGOT.get(), 9)
                 .requires(ModBlocks.VALDERIUM_BLOCK)
@@ -74,6 +83,7 @@ public class ModRecipeProvider extends RecipeProvider {
         smithing(ModItems.VALDERIUM_SMITHING_TEMPLATE.get(), Items.NETHERITE_HOE, ModItems.VALDERIUM_INGOT.get(), ModItems.VALDERIUM_HOE.get());
         smithing(ModItems.VALDERIUM_SMITHING_TEMPLATE.get(), Items.NETHERITE_SHOVEL, ModItems.VALDERIUM_INGOT.get(), ModItems.VALDERIUM_SHOVEL.get());
         smithing(ModItems.VALDERIUM_SMITHING_TEMPLATE.get(), Items.NETHERITE_SPEAR, ModItems.VALDERIUM_INGOT.get(), ModItems.VALDERIUM_SPEAR.get());
+        smithing(ModItems.VALDERIUM_SMITHING_TEMPLATE.get(), Items.MACE, ModItems.VALDERIUM_INGOT.get(), ModItems.VALDERIUM_MACE.get());
 
         List<ItemLike> VALDERIUM_SMELTABLES = List.of(ModItems.RAW_VALDERIUM, ModBlocks.VALDERIUM_ORE, ModBlocks.DEEPSLATE_VALDERIUM_ORE);
 

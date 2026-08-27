@@ -30,6 +30,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.VALDERIUM_SHOVEL);
                         output.accept(ModItems.VALDERIUM_HOE);
                         output.accept(ModItems.VALDERIUM_SPEAR);
+                        output.accept(ModItems.VALDERIUM_MACE);
 
                         output.accept(ModItems.VALDERIUM_APPLE);
 
