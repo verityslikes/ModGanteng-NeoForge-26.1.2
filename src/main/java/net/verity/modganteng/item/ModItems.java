@@ -4,12 +4,14 @@ import net.minecraft.core.component.DataComponents;
 import net.minecraft.util.Unit;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.Weapon;
+import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.verity.modganteng.ModGanteng;
 import net.verity.modganteng.food.ModFoods;
+import net.verity.modganteng.item.custom.mace.CorruptedMace;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ModGanteng.MOD_ID);
@@ -39,7 +41,17 @@ public class ModItems {
             .fireResistant()
     ));
 
+    public static final DeferredItem<Item> VALDERIUM_HELMET = ITEMS.registerItem("valderium_helmet",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.VALDERIUM_ARMOR_MATERIAL, ArmorType.HELMET)));
+    public static final DeferredItem<Item> VALDERIUM_CHESTPLATE = ITEMS.registerItem("valderium_chestplate",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.VALDERIUM_ARMOR_MATERIAL, ArmorType.CHESTPLATE)));
+    public static final DeferredItem<Item> VALDERIUM_LEGGINGS = ITEMS.registerItem("valderium_leggings",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.VALDERIUM_ARMOR_MATERIAL, ArmorType.LEGGINGS)));
+    public static final DeferredItem<Item> VALDERIUM_BOOTS = ITEMS.registerItem("valderium_boots",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.VALDERIUM_ARMOR_MATERIAL, ArmorType.BOOTS)));
+
     public static final DeferredItem<Item> VALDERIUM_SMITHING_TEMPLATE = ITEMS.registerItem("valderium_smithing_template", ModSmithingTemplateItem::createValderiumUpgradeTemplate, properties -> new Item.Properties().rarity(Rarity.EPIC));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

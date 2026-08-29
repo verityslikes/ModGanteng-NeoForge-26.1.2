@@ -61,7 +61,34 @@ public class ModRecipeProvider extends RecipeProvider {
                 .pattern("AAA")
                 .define('A', ModItems.VALDERIUM_INGOT.get())
                 .define('C', Items.APPLE)
-                .unlockedBy(getHasName(ModItems.RAW_VALDERIUM.get()), has(ModItems.RAW_VALDERIUM))
+                .unlockedBy(getHasName(ModItems.VALDERIUM_INGOT.get()), has(ModItems.VALDERIUM_INGOT))
+                .save(output);
+
+        shaped(RecipeCategory.MISC, ModItems.VALDERIUM_HELMET.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .define('A', ModItems.VALDERIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.VALDERIUM_INGOT.get()), has(ModItems.VALDERIUM_INGOT))
+                .save(output);
+        shaped(RecipeCategory.MISC, ModItems.VALDERIUM_CHESTPLATE.get())
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.VALDERIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.VALDERIUM_INGOT.get()), has(ModItems.VALDERIUM_INGOT))
+                .save(output);
+        shaped(RecipeCategory.MISC, ModItems.VALDERIUM_LEGGINGS.get())
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.VALDERIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.VALDERIUM_INGOT.get()), has(ModItems.VALDERIUM_INGOT))
+                .save(output);
+        shaped(RecipeCategory.MISC, ModItems.VALDERIUM_BOOTS.get())
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', ModItems.VALDERIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.VALDERIUM_INGOT.get()), has(ModItems.VALDERIUM_INGOT))
                 .save(output);
 
 

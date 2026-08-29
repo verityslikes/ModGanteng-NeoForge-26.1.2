@@ -7,6 +7,7 @@ import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.data.PackOutput;
 import net.verity.modganteng.ModGanteng;
 import net.verity.modganteng.block.ModBlocks;
+import net.verity.modganteng.item.ModArmorMaterials;
 import net.verity.modganteng.item.ModItems;
 
 public class ModModelProvider extends ModelProvider {
@@ -28,6 +29,11 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.VALDERIUM_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModels.generateFlatItem(ModItems.VALDERIUM_MACE.get(), ModelTemplates.FLAT_HANDHELD_MACE_ITEM);
         itemModels.generateSpear(ModItems.VALDERIUM_SPEAR.get());
+
+        itemModels.generateTrimmableItem(ModItems.VALDERIUM_HELMET.get(), ModArmorMaterials.VALDERIUM_KEY, ItemModelGenerators.TRIM_PREFIX_HELMET, false);
+        itemModels.generateTrimmableItem(ModItems.VALDERIUM_CHESTPLATE.get(), ModArmorMaterials.VALDERIUM_KEY, ItemModelGenerators.TRIM_PREFIX_CHESTPLATE, false);
+        itemModels.generateTrimmableItem(ModItems.VALDERIUM_LEGGINGS.get(), ModArmorMaterials.VALDERIUM_KEY, ItemModelGenerators.TRIM_PREFIX_LEGGINGS, false);
+        itemModels.generateTrimmableItem(ModItems.VALDERIUM_BOOTS.get(), ModArmorMaterials.VALDERIUM_KEY, ItemModelGenerators.TRIM_PREFIX_BOOTS, false);
 
 
         /* BLOCKS */

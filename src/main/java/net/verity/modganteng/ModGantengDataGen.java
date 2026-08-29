@@ -7,10 +7,7 @@ import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
-import net.verity.modganteng.datagen.ModBlockLootTableProvider;
-import net.verity.modganteng.datagen.ModBlockTagsProvider;
-import net.verity.modganteng.datagen.ModModelProvider;
-import net.verity.modganteng.datagen.ModRecipeProvider;
+import net.verity.modganteng.datagen.*;
 
 import java.util.Collections;
 import java.util.List;
@@ -30,5 +27,8 @@ public class ModGantengDataGen {
                 List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
 
         generator.addProvider(true, new ModRecipeProvider.Runner(packOutput, lookupProvider));
+        generator.addProvider(true, new ModItemTagsProvider(packOutput, lookupProvider));
+
+        generator.addProvider(true, new ModEquipmentAssetProvider(packOutput));
     }
 }

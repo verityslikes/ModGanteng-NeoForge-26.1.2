@@ -40,5 +40,17 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
         tag(ItemTags.MACE_ENCHANTABLE)
                 .add(ModItems.VALDERIUM_MACE.get());
+
+        tag(ItemTags.FOOT_ARMOR)
+                .add(ModItems.VALDERIUM_BOOTS.get());
+
+        tag(ItemTags.LEG_ARMOR)
+                .add(ModItems.VALDERIUM_LEGGINGS.get());
+
+        tag(ItemTags.CHEST_ARMOR)
+                .add(ModItems.VALDERIUM_CHESTPLATE.get());
+
+        tag(ItemTags.HEAD_ARMOR)
+                .add(ModItems.VALDERIUM_HELMET.get());
     }
 }

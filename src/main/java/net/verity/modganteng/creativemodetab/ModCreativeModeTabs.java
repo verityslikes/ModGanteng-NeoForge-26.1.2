@@ -34,6 +34,11 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.VALDERIUM_APPLE);
 
+                        output.accept(ModItems.VALDERIUM_HELMET);
+                        output.accept(ModItems.VALDERIUM_CHESTPLATE);
+                        output.accept(ModItems.VALDERIUM_LEGGINGS);
+                        output.accept(ModItems.VALDERIUM_BOOTS);
+
                         output.accept(ModBlocks.VALDERIUM_BLOCK);
                         output.accept(ModBlocks.RAW_VALDERIUM_BLOCK);
                         output.accept(ModBlocks.VALDERIUM_ORE);
