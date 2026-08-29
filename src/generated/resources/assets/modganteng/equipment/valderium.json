@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "modganteng:valderium"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "modganteng:valderium"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "modganteng:valderium"
+      }
+    ]
+  }
+}
